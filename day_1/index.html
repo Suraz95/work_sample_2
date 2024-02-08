@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pack Your Bags</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">Pack Your bags</a></div>
+        <div class="contents_Nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="reg.html">Register</a></li>
+            <li><a href="#">Services</a></li>
+            <a
+              href="#"
+              onclick="openContactMeModal()"
+              class="text-lg hover:text-pink-600 hover:underline"
+              >Contact Us</a
+            >
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="places">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./araku.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Araku</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed
+                at asperiores odio, modi accusantium neque excepturi unde enim
+                tenetur vitae quas, dolor exercitationem ea laboriosam, minus
+                ratione sequi perferendis!
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./Manali-Snowfall-Image.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Manali</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis harum alias perspiciatis deleniti eligendi voluptate omnis vero tempora velit dicta nulla, inventore aliquid quidem vitae nobis illum porro mollitia. Saepe!
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./ladakh.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Ladakh</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non hic, nostrum aliquid velit ea quis, magni sit facere itaque cumque expedita, culpa alias laborum quam! Quisquam atque unde odio fuga.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./alleppey.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Allepy</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit vel ut optio cupiditate ducimus eaque nostrum quis doloremque, beatae amet blanditiis, esse similique aliquid eos dignissimos quibusdam eius dolorum sit?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./ooty.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Ooty</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quidem et nesciunt commodi sint eos placeat, minus corporis nisi, reprehenderit repellendus! Ipsam corrupti laborum earum nulla iure, nobis eligendi aliquam2</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./laksh.jpeg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Lakshdweep</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil optio blanditiis minus tempora, sint ipsum soluta nemo! Eveniet omnis corrupti, cupiditate sit accusantium, id nihil doloremque porro, ullam ad vero?</p>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div
+      id="contactMeModal"
+      class="fixed flex items-center justify-center hidden inset-0 z-50 bg-opacity-50 backdrop-filter backdrop-blur-lg"
+    >
+      <div class="bg-black p-8 rounded-lg">
+        <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+        <p class="mb-4">
+          Feel free to reach out for any questions or collaborations!
+        </p>
+        <div class="flex items-center space-x-4">
+          <a href="mailto:purnapattela@gmail.com" class="flex items-center">
+            <img src="./gmail.png" alt="Email Icon" class="w-6 h-6" />
+            <span class="ml-2">shaik.suraz50@gmail.com</span>
+          </a>
+          <a
+            href="https://github.com/Suraz95"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center"
+          >
+            <img src="./github.png" alt="GitHub Icon" class="w-6 h-6" />
+            <span class="ml-2">GitHub</span>
+          </a>
+        </div>
+        <button
+          onclick="closeContactMeModal()"
+          class="mt-4 bg-blue-500 text-white p-2 rounded-md w-full"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function openContactMeModal() {
+        document.getElementById("contactMeModal").classList.remove("hidden");
+      }
+
+      function closeContactMeModal() {
+        document.getElementById("contactMeModal").classList.add("hidden");
+      }
+    </script>
+  </body>
+</html>
